@@ -20,29 +20,29 @@ body {
   content: "";
   background-repeat: no-repeat;
   background-size: cover;
-  background-attachment: fixed;
-  height: 100vh;
-  width: 100vw;
+  height: 100%;
+  width: 100%;
   margin: 0;
   padding: 0;
   top: 0;
+  left: 0;
   z-index: -1;
 }
 
 .body-undangan::before {
   background: url("../image/background-undangan-HBD.jpeg");
   background-position: center;
-  position: absolute;
+  position: fixed;
   content: "";
   animation: body-undangan 2s ease-in-out;
   background-repeat: no-repeat;
   background-size: cover;
-  background-attachment: fixed;
-  height: 210vh;
+  height: 100vh;
   width: 100vw;
   margin: 0;
   padding: 0;
   top: 0;
+  left: 0;
   z-index: -1;
 }
 
@@ -857,32 +857,7 @@ body {
 
 @media screen and (max-width: 800px) {
   .body::before {
-    background: url("../image/birthday-background.jpg");
-    position: absolute;
-    content: "";
-    background-repeat: no-repeat;
-    background-size: cover;
     background-position: center;
-    height: 100vh;
-    width: 100vw;
-    margin: 0;
-    padding: 0;
-    top: 0;
-    z-index: -1;
-  }
-
-  .body-undangan::before {
-    background: url("../image/background-undangan-HBD.jpeg");
-    position: absolute;
-    content: "";
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 110vh;
-    width: 100vw;
-    margin: 0;
-    padding: 0;
-    top: 0;
-    z-index: -1;
   }
 
   .notification {
