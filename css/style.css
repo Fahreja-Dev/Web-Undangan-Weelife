@@ -16,12 +16,12 @@ body {
 
 .body::before {
   background: url("../image/birthday-background.jpg");
-  position: absolute;
+  position: fixed;
   content: "";
   background-repeat: no-repeat;
   background-size: cover;
-  height: 100%;
-  width: 100%;
+  height: 100vh;
+  width: 100vw;
   margin: 0;
   padding: 0;
   top: 0;
