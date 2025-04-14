@@ -409,10 +409,9 @@ fahreja.notification.addEventListener("click", () => {
             }
 
         };
-        // Select the element you want to observe
+        
         const targetElement = fahreja.closeNotification;
-
-        // Create an observer instance
+        
         const observer = new MutationObserver((mutationsList) => {
             mutationsList.forEach((mutation) => {
                 if (mutation.type === 'attributes') {
