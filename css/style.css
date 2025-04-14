@@ -9,13 +9,18 @@ Theme Design: Fahreja Dev
 @import url("https://fonts.googleapis.com/css2?family=Happy+Monkey&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&display=swap");
 
+:root {
+  --background-theme: url("../image/background-theme/birthday-background.jpg");
+  --background-link-room: rgb(240, 240, 240);
+}
+
 body {
   overflow-x: hidden;
   width: 96%;
 }
 
 .body::before {
-  background: url("../image/birthday-background.jpg");
+  background: var(--background-theme);
   position: fixed;
   content: "";
   background-repeat: no-repeat;
@@ -30,7 +35,7 @@ body {
 }
 
 .body-undangan::before {
-  background: url("../image/background-undangan-HBD.jpeg");
+  background: var(--background-theme);
   background-position: center;
   position: fixed;
   content: "";
@@ -188,6 +193,11 @@ body {
   flex-direction: column;
   position: relative;
   align-items: center;
+}
+
+.wrapping-gift > .gift > p {
+  font-family: "Happy Monkey", system-ui;
+  color: white;
 }
 
 .gifts {
@@ -546,7 +556,7 @@ body {
 .link-room {
   display: flex;
   position: relative;
-  background-image: url("../image/birthday-cake-with-candles-transformed.jpeg");
+  background-image: var(--background-link-room);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
